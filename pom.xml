@@ -4,8 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.booking</groupId>
+    <!--<groupId>com.booking</groupId>
     <artifactId>com.booking</artifactId>
+    <version>1.0-SNAPSHOT</version>-->
+    <groupId>TestNGListener</groupId>
+    <artifactId>TestNGListener</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -25,6 +28,17 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons.io</groupId>
+            <artifactId>commonsIO</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
         </dependency>
 
     </dependencies>

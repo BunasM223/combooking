@@ -1,8 +1,7 @@
 package com.booking.test;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,19 +16,17 @@ public class PageHotels {
 
     @FindBy(className = "invisible_spoken")
     private WebElement error;
-    //список названий отелей
+
     @FindAll({
             @FindBy(xpath = "//a[@class='hotel_name_link url']")
     })
     private List<WebElement> hotels;
 
-    //список ссылок "Ваш бюджет"
     @FindAll({
             @FindBy(xpath = "//a[contains(@data-id,'pri-')]")
     })
     private List<WebElement> budgetChoise;
 
-    //ссылка на лучшее предложение
     @FindBy(xpath = "//a[@data-id='any_deal-1' and @data-name='any_deal']")
     private WebElement deals;
 
@@ -87,5 +84,7 @@ public class PageHotels {
     public boolean isErrorMessageDisplayed() {
         return error.isDisplayed();
     }
+
+
 
 }
