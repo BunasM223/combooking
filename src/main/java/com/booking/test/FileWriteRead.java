@@ -21,10 +21,10 @@ public class FileWriteRead {
         int yearIn = 2018;
         int yearOut = 2018;
         int yearOldOut = 2014;
-        int monthIn = 10;
-        int monthOut = 10;
-        int monthDayIn = 27;
-        int monthDayOut = 29;
+        int monthIn = 11;
+        int monthOut = 11;
+        int monthDayIn = 03;
+        int monthDayOut = 04;
         String city = "Minsk";
 
 

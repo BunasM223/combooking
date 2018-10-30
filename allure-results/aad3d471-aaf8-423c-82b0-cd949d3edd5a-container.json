@@ -1,0 +1,1 @@
+{"uuid":"aad3d471-aaf8-423c-82b0-cd949d3edd5a","name":"com.booking.test.TestTask.clearCache","description":"","start":1540929271220,"stop":1540929278150,"children":["575272e8-bec6-4bf9-a198-e94db5b2d9d4"],"befores":[{"name":"clearCache","status":"passed","stage":"finished","description":"","start":1540929271220,"stop":1540929278149}]}

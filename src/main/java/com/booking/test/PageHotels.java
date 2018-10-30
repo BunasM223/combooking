@@ -1,6 +1,7 @@
 package com.booking.test;
 
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
@@ -37,7 +38,7 @@ public class PageHotels {
     public List<String> getHotelNames() {
         return hotels.stream().map(hotel -> hotel.findElement(By.xpath("./span[contains(@class,'sr-hotel__name')]")).getText()).collect(Collectors.toList());
     }
-
+    @Step("Step click selectCheapHotels.")
     public PageHotels selectCheapHotels() {
         budgetChoise.get(0).click();
         new WebDriverWait(driver, 10).until(
@@ -45,6 +46,7 @@ public class PageHotels {
         return PageFactory.initElements(driver, this.getClass());
     }
 
+    @Step("Step click unselectCheapHotels.")
     public PageHotels unselectCheapHotels() {
         budgetChoise.get(0).click();
         new WebDriverWait(driver, 10).until(
@@ -52,6 +54,7 @@ public class PageHotels {
         return PageFactory.initElements(driver, this.getClass());
     }
 
+    @Step("Step click unselectCheapHotels.")
     public PageHotels selectExpensiveHotels() {
         budgetChoise.get(budgetChoise.size()-1).click();
         new WebDriverWait(driver, 10).until(
@@ -59,6 +62,7 @@ public class PageHotels {
         return PageFactory.initElements(driver, this.getClass());
     }
 
+    @Step("Step click unselectExpensiveHotels.")
     public PageHotels unselectExpensiveHotels() {
         budgetChoise.get(budgetChoise.size()-1).click();
         new WebDriverWait(driver, 10).until(
@@ -66,6 +70,7 @@ public class PageHotels {
         return PageFactory.initElements(driver, this.getClass());
     }
 
+    @Step("Step click unselectExpensiveHotels.")
     public PageHotels selectDealsHotels() {
         deals.click();
         new WebDriverWait(driver, 10).until(
@@ -73,6 +78,7 @@ public class PageHotels {
         return PageFactory.initElements(driver, this.getClass());
     }
 
+    @Step("Step click unselectDealsHotels.")
     public PageHotels unselectDealsHotels() {
         deals.click();
         new WebDriverWait(driver, 10).until(
